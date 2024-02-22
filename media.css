@@ -1,9 +1,11 @@
 @media (max-width:1440px){
     body{
-        overflow-x: hidden !important;
+     overflow-y: scroll !important;
+     background-color: black !important;
     }
     #video-bg,#project-bg{
-        max-width: 400% !important;
+        max-height: 200% !important;
+        
      }
 }
 @media (max-width:991px){
@@ -61,8 +63,4 @@
         margin-right: auto;
         background-size: 100%;
     }
-    body{
-        overflow-y: scroll !important;
-    }
-
 }
