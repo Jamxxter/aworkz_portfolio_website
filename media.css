@@ -8,15 +8,18 @@
         
      }
 }
+@media (max-width:1366px){
+    .container-body{
+      flex-direction: column;
+    }
+}
 @media (max-width:991px){
     #jam-box{
         background-size: 170%;
     }
 }
 @media (max-width:768px) {
-    .container-body{
-        flex-direction: column-reverse;
-    }
+
     .nav-bar-2{
         justify-content: center;
         padding: 10px;
