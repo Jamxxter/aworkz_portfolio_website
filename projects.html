@@ -46,47 +46,58 @@
         </div>
             </header>
     <section id="project-section">
-        <div class="container mt-5 mb-5" data-aos="zoom-in">
-            <h1 style="text-align: center;">Projects</h1>
-            <div class="col-lg-12 d-flex" style="justify-content: center;">
-                <div class="container-body d-flex mt-5 mb-5" style="gap: 50px;">
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Raw Vs Edited end of sexual consent andrew ta.mp4" controls></video>
-                    </div>
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Raw vs Edited Ali abdaal style.mp4" controls></video>
-                    </div>
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Get banned raw vs edited.mp4" controls></video>
-                    </div>
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/German Alpha Male Raw vs Edited.mp4" controls></video>
-                    </div>
-                    
-                </div>
+    <div class="container py-5" data-aos="zoom-in">
+        <h1 class="text-center mb-5">Projects</h1>
+
+        <div class="video-scroll">
+
+            <div class="video-card">
+                <a href="https://www.tiktok.com/@aworkz.edits/video/7390007441305406728" target="_blank" class="video-title">
+                        Billionaire
+                </a>
+
+                <video src="Assets/projects/Billionaire raw vs edited.mp4" controls></video>
             </div>
 
+            <div class="video-card">
+                <a href="https://www.tiktok.com/@aworkz.edits/video/7390007441305406728" target="_blank" class="video-title">
+                        Giglabs
+                </a>
 
-            <div class="col-lg-12 d-flex" style="justify-content: center;">
-                <div class="container-body d-flex mt-5 mb-5" style="gap: 50px;">
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Arnold in military service Raw vs Edited.mp4" controls></video>
-                    </div>
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Dirt Tape Raw Vs Edited.mp4" controls></video>
-                    </div>
-                    <div class="col-lg-3 mt-5 pt-5 d-flex" style="flex-direction: column; justify-content: center; width: 300px;">
-                        <video src="Assets/projects/Caleb Castille Clip.mp4" controls></video>
-                    </div>  
-                </div>
+                <video src="Assets/projects/Giglabs.mp4" controls></video>
             </div>
+
+            <div class="video-card">
+                <a href="https://www.tiktok.com/@aworkz.edits/video/7390007441305406728" target="_blank" class="video-title">
+                        Arnold in military
+                </a>
+
+                <video src="Assets/projects/Arnold in military.mp4" controls></video>
+            </div>
+
+            <div class="video-card">
+                <a href="https://www.tiktok.com/@aworkz.edits/video/7390007441305406728" target="_blank" class="video-title">
+                        Get banned
+                </a>
+
+                <video src="Assets/projects/Get banned.mp4" controls></video>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
     <script>
         AOS.init();
+        const videoScroll = document.querySelector('.video-scroll');
+
+videoScroll.addEventListener('wheel', function (e) {
+    e.preventDefault();
+    this.scrollLeft += e.deltaY * 2; // Increase speed
+}, { passive: false });
     </script>
+    
 </body>
 
 </html>
