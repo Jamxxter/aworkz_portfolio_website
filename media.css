@@ -92,3 +92,27 @@
         background-size:100%;
     }
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+img,
+video{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+.container-body{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
